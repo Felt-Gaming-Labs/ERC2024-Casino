@@ -10,22 +10,22 @@ export default function HomePage() {
   return (
     <>
       <Head>
-        <title>Gamba v2 Casino Platform - Next.js</title>
-        <meta name="title" content="Gamba v2 Casino Platform - Next.js" />
+        <title>ERC2024 Casino</title>
+        <meta name="title" content="Erection 2024" />
         <meta
           name="description"
-          content="A fair, simple, and decentralized casino on Solana."
+          content="ERC2024: This Erection, everything is at stake."
         />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://gamba-v2-nextjs.vercel.app/" />
+        <meta property="og:url" content="https://casino.erection2024.club" />
         <meta
           property="og:title"
-          content="Gamba v2 Casino Platform - Next.js"
+          content="ERC2024: This Erection, everything is at stake."
         />
         <meta
           property="og:description"
-          content="A fair, simple, and decentralized casino on Solana."
+          content="ERC2024: This Erection, everything is at stake."
         />
         <meta
           property="og:image"
@@ -35,15 +35,15 @@ export default function HomePage() {
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:url"
-          content="https://gamba-v2-nextjs.vercel.app/"
+          content="https://casino.erection2024.club"
         />
         <meta
           property="twitter:title"
-          content="Gamba v2 Casino Platform - Next.js"
+          content="ERC2024: This Erection, everything is at stake."
         />
         <meta
           property="twitter:description"
-          content="A fair, simple, and decentralized casino on Solana."
+          content="ERC2024: This Erection, everything is at stake."
         />
         <meta
           property="twitter:image"
