@@ -1,48 +1,58 @@
 // src/components/sections/Dashboard/WelcomeBanner.tsx
-import React from "react";
+import React from 'react';
+import styled from 'styled-components';
+
+const Button = styled.button`
+  border: none;
+  max-width: 200px; // Set a max-width for better appearance
+  border-radius: 10px;
+  padding: 15px 20px; // Increased padding for better visibility
+  background: #ffffffdf;
+  transition: background .2s ease;
+  &:hover {
+    background: white;
+  }
+  color: black;
+  cursor: pointer;
+  font-size: 1em; // Adjust font size as needed
+  margin-top: 20px; // Add some space above the button
+`;
+
+const Welcome = styled.div`
+  background: black; // Set background to black
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px; // Increased padding to give more space around contents
+
+  & img {
+    width: 100%; // Ensure the image covers the full width
+    height: auto; // Adjust height automatically to maintain aspect ratio
+    object-fit: cover; // Ensure the image covers the space without distortion
+  }
+
+  & > div {
+    text-align: center; // Center-align the text within the div
+  }
+`;
 
 export function WelcomeBanner() {
+  const bannerImageUrl = 'https://i.imgur.com/SZixxaj.jpg';
+
   return (
-    <div className="relative overflow-hidden flex flex-col items-center justify-center p-4 rounded-lg lg:grid lg:grid-cols-3 gap-4 lg:p-10 bg-gradient-to-br from-orange-300 via-pink-500 to-blue-500">
-      <div className="lg:col-span-2 text-center lg:text-left">
-        <div className="flex items-center justify-center md:justify-start">
-          <h1 className="text-2xl md:text-4xl font-bold text-white drop-shadow-md">
-            Welcome to Gamba v2
-          </h1>
-          <img src="/wave.gif" className="h-14" alt="Gamba Logo" />
-        </div>
-        <p className="mt-4 text-white drop-shadow">
-          A fair, simple, and decentralized casino on Solana.
-        </p>
+    <Welcome>
+      <img src={bannerImageUrl} alt="Felt Casino Banner" />
+      <div>
+        <h1>This Erection Matters</h1>
+        <p>ERC24</p>
       </div>
-      <div className="whitespace-nowrap grid grid-cols-2 grid-rows-2 gap-2 mt-5 md:flex md:flex-col md:mt-0 md:justify-start">
-        <button
-          onClick={() => window.open("https://explorer.gamba.so/create")}
-          className="rounded-lg p-3 bg-white hover:bg-gray-200 hover:-translate-y-0.5 transform text-black transition-all duration-200 ease-in-out cursor-pointer shadow-lg hover:shadow-xl"
-        >
-          🚀 Create Pool
-        </button>
-        <button
-          onClick={() =>
-            window.open("https://github.com/BankkRoll/Gamba-V2-Next.js")
-          }
-          className="rounded-lg p-3 bg-white hover:bg-gray-200 hover:-translate-y-0.5 transform text-black transition-all duration-200 ease-in-out cursor-pointer shadow-lg hover:shadow-xl"
-        >
-          👨‍💻 Build your own
-        </button>
-        <button
-          onClick={() => window.open("https://gamba.so/docs")}
-          className="rounded-lg p-3 bg-white hover:bg-gray-200 hover:-translate-y-0.5 transform text-black transition-all duration-200 ease-in-out cursor-pointer shadow-lg hover:shadow-xl"
-        >
-          📖 Gamba Docs
-        </button>
-        <button
-          onClick={() => window.open("https://discord.com/invite/HSTtFFwR")}
-          className="rounded-lg p-3 bg-white hover:bg-gray-200 hover:-translate-y-0.5 transform text-black transition-all duration-200 ease-in-out cursor-pointer shadow-lg hover:shadow-xl"
-        >
-          💬 Join Discord
-        </button>
-      </div>
-    </div>
+      <Button onClick={() => window.open('https://jup.ag/swap/SOL-ERC24_5jNC4YHqF3x1HCuYXDCkxGhtikot8Pfjvr44uo16FeRq', '_blank')}>
+        🪙 Buy $ERC24
+      </Button>
+    </Welcome>
   );
 }
