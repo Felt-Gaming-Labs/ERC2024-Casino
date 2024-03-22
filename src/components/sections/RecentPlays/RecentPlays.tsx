@@ -16,7 +16,7 @@ export default function RecentPlays() {
     useState<GambaTransaction<"GameSettled"> | null>(null);
 
   const togglePlatformView = () => {
-    setLoading(true);
+    setLoading(false);
     setPlatformOnly(!platformOnly);
   };
 
