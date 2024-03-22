@@ -1,31 +1,3 @@
-// src/components/layout/Footer.tsx
-
-// Button links
-const LINKS = [
-  {
-    href: "https://explorer.gamba.so/create",
-    title: "🚀 Create Pool",
-  },
-  {
-    href: "https://github.com/BankkRoll/Gamba-V2-Next.js",
-    title: "👨‍💻 Build your own",
-  },
-  {
-    href: "https://gamba.so/docs",
-    title: "📖 Gamba Docs",
-  },
-  {
-    href: "https://discord.com/invite/HSTtFFwR",
-    title: "💬 Join Discord",
-  },
-];
-
-// Twitter link
-const TWITTER_LINK = {
-  href: "https://twitter.com/bankkroll_eth",
-  title: "© 2024 Template made with ❤️ by Bankk",
-};
-
 export default function Footer() {
   return (
     <footer className="bg-black rounded-t-2xl shadow dark:bg-gray-900">
@@ -34,33 +6,66 @@ export default function Footer() {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://gamba.so/"
+            href="https://erection2024.club/"
             className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
           >
             <img src="/logo.svg" className="h-10" alt="Gamba Logo" />
           </a>
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-            {LINKS.map((link) => (
-              <li key={link.href}>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={link.href}
-                  className="hover:underline me-4 md:me-6"
-                >
-                  {link.title}
-                </a>
-              </li>
-            ))}
+            <li>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://jup.ag/swap/SOL-ERC24_5jNC4YHqF3x1HCuYXDCkxGhtikot8Pfjvr44uo16FeRq"
+                className="hover:underline me-4 md:me-6"
+              >
+                🚀 Buy $ERC24
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://twitter.com/erection2024"
+                className="hover:underline me-4 md:me-6"
+              >
+                👨‍💻 ERC24 on X
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://erection2024.club/"
+                className="hover:underline me-4 md:me-6"
+              >
+                🛜 Website
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://discord.gg/erc24"
+                className="hover:underline"
+              >
+                💬 Join Discord
+              </a>
+            </li>
           </ul>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
-          <a href={TWITTER_LINK.href} className="hover:underline">
-            {TWITTER_LINK.title}
+          © 2024 Made 📈 by{" "}
+          <a
+            href="https://twitter.com/erection2024"
+            className="hover:underline"
+          >
+            ERC24™
           </a>
         </span>
       </div>
     </footer>
   );
 }
+
