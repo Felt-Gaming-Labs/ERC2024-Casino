@@ -9,7 +9,6 @@ import { useRecentPlays } from "../../../hooks/useRecentPlays";
 
 export default function RecentPlays() {
   const [platformOnly, setPlatformOnly] = useState(false);
-  const [platformOnly, setPlatformOnly] = useState(false);
   const [loading, setLoading] = useState(false);
   const events = useRecentPlays(platformOnly);
   const [selectedGame, setSelectedGame] =
