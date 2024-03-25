@@ -8,13 +8,6 @@ import { ShareModal } from "./ShareModal";
 import { TimeDiff } from "@/utils/TimeDiff";
 import { useRecentPlays } from "../../../hooks/useRecentPlays";
 
-export default function RecentPlays() {
-  const [platformOnly, setPlatformOnly] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const events = useRecentPlays(platformOnly);
-  const [selectedGame, setSelectedGame] =
-    useState<GambaTransaction<"GameSettled"> | null>(null);
-
   const togglePlatformView = () => {
     setLoading(false);
     setPlatformOnly(!platformOnly);
