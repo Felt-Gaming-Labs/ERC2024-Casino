@@ -32,7 +32,6 @@ export default function RecentPlays() {
       <div className="mb-4 flex justify-center">
         <div className="flex items-center gap-4">
           <GambaUi.Button
-            onClick={() => setPlatformOnly(true)}
             onClick={() => setPlatformOnly(false)}
             main={platformOnly}
           >
