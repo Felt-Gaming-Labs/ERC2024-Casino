@@ -9,7 +9,7 @@ import { TimeDiff } from "@/utils/TimeDiff";
 import { useRecentPlays } from "../../../hooks/useRecentPlays";
 
 export default function RecentPlays() {
-  const [platformOnly, setPlatformOnly] = useState(true);
+  const [platformOnly, setPlatformOnly] = useState(false);
   const [loading, setLoading] = useState(false);
   const events = useRecentPlays(platformOnly);
   const [selectedGame, setSelectedGame] =
@@ -22,7 +22,7 @@ export default function RecentPlays() {
 
   useEffect(() => {
     setSelectedGame(null);
-    setLoading(true);
+    setLoading(false);
   }, [platformOnly]);
 
   useEffect(() => {
@@ -34,7 +34,7 @@ export default function RecentPlays() {
       <div className="mb-4 flex justify-center">
         <div className="flex items-center gap-4">
           <GambaUi.Button
-            onClick={() => setPlatformOnly(true)}
+            onClick={() => setPlatformOnly(false)}
             main={platformOnly}
           >
             Platform Only
