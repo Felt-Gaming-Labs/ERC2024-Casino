@@ -5,6 +5,7 @@ import { PLATFORM_EXPLORER_URL } from "../../../../config";
 import { RecentPlay } from "@/utils/RecentPlay";
 import { ShareModal } from "./ShareModal";
 import { TimeDiff } from "@/utils/TimeDiff";
+import { useRecentPlays } from "../../../hooks/useRecentPlays";
 
 export default function RecentPlays() {
   const [platformOnly, setPlatformOnly] = useState(false);
@@ -84,6 +85,10 @@ export default function RecentPlays() {
         }
       >
         {platformOnly ? "🚀 Platform Explorer" : "🚀 Gamba Explorer"}
+      </GambaUi.Button>
+    </div>
+  );
+}
       </GambaUi.Button>
     </div>
   );
