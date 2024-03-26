@@ -12,7 +12,7 @@ export const GAMES: GameBundle[] = [
       image: "/games/logo.png",
       description: `Memecoin Kombat: $BONK vs $WEN. They could coexist... but they choose a deathmatch. Select your memecoin, 2x your bet if you win.`,
     },
-    app: dynamic(() => import("./MemeFight")),
+    app: dynamic(() => import("./MemeFight2")),
   },
   {
     id: "slots",
