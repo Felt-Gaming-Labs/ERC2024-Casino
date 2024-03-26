@@ -5,16 +5,6 @@ import dynamic from "next/dynamic";
 
 export const GAMES: GameBundle[] = [
   {
-    id: "memefight",
-    meta: {
-      background: "#E6BF67",
-      name: "Memecoin Kombat",
-      image: "/games/logo.png",
-      description: `Memecoin Kombat: $BONK vs $WEN. They could coexist... but they choose a deathmatch. Select your memecoin, 2x your bet if you win.`,
-    },
-    app: dynamic(() => import("./MemeFight2")),
-  },
-  {
     id: "slots",
     meta: {
       background: "#5465ff",
