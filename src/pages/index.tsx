@@ -4,7 +4,6 @@ import React, { useEffect } from "react";
 import Dashboard from "@/components/sections/Dashboard/Dashboard";
 import Head from "next/head";
 import Header from "@/components/layout/Header";
-import RecentPlays from "@/components/sections/RecentPlays/RecentPlays";
 
 export default function HomePage() {
   return (
