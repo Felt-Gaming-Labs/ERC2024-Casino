@@ -13,8 +13,8 @@ const WIN_BONK_GIF = "/games/memefight/bonkwins.gif";
 
 // Enum for side selection
 const SIDES = {
-  white: "$WEN",
-  black: "$BONK",
+  $WEN: "$WEN",
+  $BONK: "$BONK",
 };
 
 type Side = keyof typeof SIDES;
