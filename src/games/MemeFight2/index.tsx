@@ -111,13 +111,13 @@ function MemeFight() {
             <p>Choose Your Memecoin</p>
           </div>
           <img
-            src={TEXTURE_WHITE_ROOSTER}
+            src={TEXTURE_WEN}
             alt="$WEN"
             style={getRoosterStyle("$WEN")}
             onClick={() => setSide("$WEN")}
           />
           <img
-            src={TEXTURE_BLACK_ROOSTER}
+            src={TEXTURE_BONK}
             alt="$BONK"
             style={getRoosterStyle("$BONK")}
             onClick={() => setSide("$BONK")}
