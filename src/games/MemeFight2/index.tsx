@@ -6,10 +6,10 @@ import { useWallet } from "@solana/wallet-adapter-react";
 import { useWalletModal } from "@solana/wallet-adapter-react-ui";
 
 // Constants for roosters and their results
-const TEXTURE_WHITE_ROOSTER = "/games/memefight/wen.png";
-const TEXTURE_BLACK_ROOSTER = "/games/memefight/bonk.png";
-const WIN_WHITE_ROOSTER_GIF = "/games/memefight/wenwins.gif";
-const WIN_BLACK_ROOSTER_GIF = "/games/memefight/bonkwins.gif";
+const TEXTURE_WEN = "/games/memefight/wen.png";
+const TEXTURE_BONK = "/games/memefight/bonk.png";
+const WIN_WEN_GIF = "/games/memefight/wenwins.gif";
+const WIN_BONK_GIF = "/games/memefight/bonkwins.gif";
 
 // Enum for side selection
 const SIDES = {
@@ -80,11 +80,11 @@ function MemeFight() {
 
   const imageToShow = win
     ? side === "$WEN"
-      ? WIN_WHITE_ROOSTER_GIF
-      : WIN_BLACK_ROOSTER_GIF
+      ? WIN_WEN_GIF
+      : WIN_BONK_GIF
     : side === "$WEN"
-      ? WIN_BLACK_ROOSTER_GIF
-      : WIN_WHITE_ROOSTER_GIF;
+      ? WIN_BONK_GIF
+      : WIN_WEN_GIF;
 
   const getRoosterStyle = (roosterSide: Side) => ({
     cursor: "pointer",
