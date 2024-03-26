@@ -25,7 +25,7 @@ function MemeFight() {
   const [playing, setPlaying] = useState(false);
   const [win, setWin] = useState(false);
   const [result, setResult] = useState<string>("");
-  const [side, setSide] = useState<Side>("white");
+  const [side, setSide] = useState<Side>("$WEN");
   const [wager, setWager] = useWagerInput();
   const sounds = useSound({
     win: "/games/memefight/win.mp3",
